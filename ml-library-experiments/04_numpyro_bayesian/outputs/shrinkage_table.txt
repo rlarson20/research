@@ -1,0 +1,15 @@
+noise-coefficient mean |β| (lower is better — wants to be 0):
+  Normal-prior Bayes  1.809
+  Horseshoe Bayes     1.033
+  Lasso α=1.0         0.922
+  Ridge α=1.0         1.904
+
+signal-recovery |β - OLS_aug| (lower is better):
+  Normal-prior Bayes  9.065
+  Horseshoe Bayes     9.487
+  Lasso α=1.0         9.813
+  Ridge α=1.0         2.163
+
+Bayesian 95% CrI mean width on signal cols (calibrated uncertainty):
+  Normal-prior Bayes  15.585
+  Horseshoe Bayes     13.249

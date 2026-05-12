@@ -1,0 +1,14 @@
+sklearn MLP   test_acc=0.9733  fit=0.63s
+PyTorch MLP   (xavier_bnOn)  val_acc=0.9800
+PyTorch CNN   val_acc=0.9711  fit=0.83s
+
+Init × BN grid (final val_acc):
+  xavier_bnOff         0.9733
+  xavier_bnOn          0.9800
+  kaiming_bnOff        0.9689
+  kaiming_bnOn         0.9800
+
+LR schedules (final val_acc):
+  constant  0.9822
+  step      0.9689
+  cosine    0.9711

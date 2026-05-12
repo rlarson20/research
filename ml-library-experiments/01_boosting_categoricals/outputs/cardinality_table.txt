@@ -1,0 +1,14 @@
+cardinality library     logloss   auc      fit_s
+----------- -------     -------   ---      -----
+          5 LightGBM    0.7578    0.7552   0.03
+          5 CatBoost    0.5337    0.8153   0.22
+          5 XGBoost-OH  0.7927    0.7955   0.05
+         20 LightGBM    0.8911    0.7513   0.03
+         20 CatBoost    0.5389    0.8088   0.19
+         20 XGBoost-OH  0.8800    0.7773   0.05
+         50 LightGBM    0.6555    0.8032   0.03
+         50 CatBoost    0.4715    0.8630   0.19
+         50 XGBoost-OH  0.8493    0.7808   0.05
+         80 LightGBM    0.8420    0.7269   0.03
+         80 CatBoost    0.5546    0.7899   0.19
+         80 XGBoost-OH  0.9831    0.7299   0.06
