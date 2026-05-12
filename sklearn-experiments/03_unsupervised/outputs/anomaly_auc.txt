@@ -1,0 +1,6 @@
+detector              roc_auc
+--------              -------
+IsolationForest       0.981
+OneClassSVM           0.861
+LocalOutlierFactor    0.966
+EllipticEnvelope      0.988

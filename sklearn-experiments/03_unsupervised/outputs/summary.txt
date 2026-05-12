@@ -1,0 +1,10 @@
+clustering_silhouette_ari:
+  KMeans: sil=0.136 ari=0.531
+  Agglomerative: sil=0.125 ari=0.664
+  DBSCAN: sil=0.342 ari=0.029
+dbscan_eps: 3.236  clusters: 14  noise: 1474
+anomaly_auc:
+  IsolationForest: 0.981
+  OneClassSVM: 0.861
+  LocalOutlierFactor: 0.966
+  EllipticEnvelope: 0.988

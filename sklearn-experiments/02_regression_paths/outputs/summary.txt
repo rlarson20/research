@@ -1,0 +1,9 @@
+best_cv_model: ElasticNet
+baseline_no_selection_rmse: 52.386
+lassocv_alpha: 3.8238
+lassocv_features_kept: 12 (1 noise)
+feature_selection_results:
+  SelectKBest(MI): rmse=52.595  feats=10  noise=0
+  RFE(Ridge): rmse=53.053  feats=10  noise=0
+  SelectFromModel(LassoCV): rmse=49.119  feats=12  noise=1
+  SelectFromModel(RF): rmse=53.151  feats=6  noise=1

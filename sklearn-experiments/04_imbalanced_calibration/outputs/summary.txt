@@ -1,0 +1,11 @@
+minority-class metrics at threshold 0.5:
+  LogReg cw=None: P=0.667 R=0.013 F1=0.025 AUC=0.719
+  LogReg cw=balanced: P=0.105 R=0.717 F1=0.183 AUC=0.732
+  RandomForest cw=None: P=0.950 R=0.119 F1=0.212 AUC=0.913
+  RandomForest cw=balanced: P=1.000 R=0.057 F1=0.107 AUC=0.928
+  GradBoost cw=n/a: P=0.757 R=0.176 F1=0.286 AUC=0.868
+f1-optimal threshold for GBM: 0.1466
+calibration brier scores:
+  RF uncalibrated: 0.03561
+  RF + isotonic: 0.03316
+  RF + sigmoid: 0.03310

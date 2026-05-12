@@ -1,0 +1,7 @@
+algorithm       silhouette    ARI
+---------       ----------    ---
+KMeans              0.136    0.531
+Agglomerative       0.125    0.664
+DBSCAN              0.342    0.029
+
+DBSCAN eps=3.236  clusters_found=14  noise_points=1474

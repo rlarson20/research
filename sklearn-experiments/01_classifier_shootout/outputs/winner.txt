@@ -1,0 +1,16 @@
+winner: LogReg
+best_params: {'clf__C': 0.1}
+test_accuracy: 0.9737
+test_f1: 0.9793
+test_auc: 0.9957
+top_features (perm_importance):
+  worst texture: 0.0172
+  worst smoothness: 0.0159
+  worst concave points: 0.0115
+  mean concave points: 0.0113
+  worst concavity: 0.0112
+  radius error: 0.0106
+  worst radius: 0.0103
+  worst area: 0.0098
+  worst perimeter: 0.0093
+  mean area: 0.0079
