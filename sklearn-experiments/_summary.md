@@ -1,0 +1,7 @@
+Exploring the breadth of scikit-learn, this project orchestrates four distinct experiments on classification, regression, clustering, and imbalanced learning using classic datasets and methodical pipelines. Each setup examines interpretability, regularization, dimensionality reduction, calibration, and threshold tuning—revealing practical insights about model selection, metric behaviors, parameter defaults, and API evolution across the scikit-learn library. Results consistently highlight the strength of linear models on tabular data, the mismatch between AUC and F1, the pitfalls of default hyperparameters, and the value of inspection APIs. Scripts are fully reproducible, organized per experiment, and leverage scikit-learn 1.8.0; details, outputs, and findings are documented in experiment subfolders and summary/postmortem files. See the project structure: [sklearn-experiments repository](https://github.com/scikit-learn/scikit-learn) and the core [scikit-learn library](https://scikit-learn.org/).
+
+Key findings:
+- Regularized linear models outperformed more complex methods on small, clean tabular datasets.
+- AUC and threshold-dependent metrics (like F1) can diverge sharply; threshold tuning is essential for imbalanced tasks.
+- Several common scikit-learn defaults and recent deprecations affect real-world reliability—hyperparameter tuning and API awareness are necessary.
+- Model inspection tools, such as permutation importance and partial dependence plots, substantially enhance interpretability.
