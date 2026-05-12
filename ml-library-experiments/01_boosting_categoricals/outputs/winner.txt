@@ -1,0 +1,5 @@
+sweep_cardinalities: [5, 20, 50, 80]
+best_optuna_logloss_val: 0.5178
+best_optuna_params: {'lr': 0.06619523092062217, 'num_leaves': 9, 'max_depth': 8, 'min_child_samples': 33, 'reg_alpha': 0.039702453334803545, 'reg_lambda': 0.962905653843255}
+tuned_test_logloss: 0.6812
+tuned_test_auc: 0.7847

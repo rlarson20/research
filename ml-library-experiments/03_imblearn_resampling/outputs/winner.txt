@@ -1,0 +1,8 @@
+dataset: make_classification 99/1, 10000 x 20
+minority count: train=106  test=35
+winner by F1_tuned: none  th=0.137  F1=0.327
+
+Top 3 by AP, 5-fold CV:
+  none           0.2170 ± 0.1284
+  SMOTE          0.1488 ± 0.1147
+  SMOTE+Tomek    0.1488 ± 0.1147

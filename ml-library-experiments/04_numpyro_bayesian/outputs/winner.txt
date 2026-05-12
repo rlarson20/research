@@ -1,0 +1,7 @@
+raw NUTS time: 6.6s
+horseshoe NUTS time: 7.2s
+normal NUTS time (aug): 4.6s
+posterior mean |β_noise| Normal:   1.809
+posterior mean |β_noise| Horseshoe: 1.033
+Lasso α=1.0 |β_noise| mean: 0.922
+Ridge α=1.0 |β_noise| mean: 1.904
