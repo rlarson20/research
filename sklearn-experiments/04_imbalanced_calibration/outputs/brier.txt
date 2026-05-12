@@ -1,0 +1,5 @@
+model                Brier_score
+-----                -----------
+RF uncalibrated      0.03561
+RF + isotonic        0.03316
+RF + sigmoid         0.03310
