@@ -113,7 +113,19 @@ for dirname, commit_date in subdirs_with_dates:
     print()  # Add blank line between entries
 
 ]]]-->
-## 1 research projects
+## 2 research projects
+
+### [ml-library-experiments](https://github.com/rlarson20/research/tree/main/ml-library-experiments) (2026-05-12)
+
+Exploring the strengths and quirks of popular Python machine learning libraries beyond scikit-learn, this project runs four targeted experiments focusing on high-cardinality categoricals (CatBoost vs LightGBM/XGBoost), custom PyTorch training loops, imbalanced-learn resampling, and Bayesian regression with NumPyro. Each experiment is fast, deterministic, self-contained, and documents both API choices and empirical outcomes. Key observations highlight that, for small clean datasets, sklearn's classifiers are difficult to outperform in accuracy; the real value in libraries like CatBoost, PyTorch, imblearn, and NumPyro lies in specialized features (better handling of categoricals, custom training loop instrumentation, resampling options, or calibrated uncertainty), not superior raw accuracy. Detailed cross-library insights cover reproducibility, pipeline API pitfalls, and metric discrepancies (AUC often misleads under severe imbalance)—offering a practical guide to when and why to upgrade from sklearn.  
+Experiment code is organized at: [ml-library-experiments](../ml-library-experiments), with sibling [sklearn-experiments](../sklearn-experiments/) for comparison.
+
+**Key findings:**
+- CatBoost far outperforms LightGBM/XGBoost on high-cardinality categoricals due to its handling of ordered target statistics.
+- PyTorch's custom loops add diagnostic insight (e.g., gradient norm, learning rate schedules) rather than accuracy gains on small data.
+- For extreme class imbalance, simple logistic regression with threshold tuning beats all imblearn resamplers and `class_weight="balanced"` options.
+- No single Bayesian or frequentist method dominates across all metrics; e.g., Ridge recovers signals best, Lasso excels at noise rejection, while the horseshoe prior uniquely provides well-calibrated uncertainty intervals.
+- Many libraries require non-obvious determinism flags and pipeline choices for reliable, fair experimentation.
 
 ### [sklearn-experiments](https://github.com/rlarson20/research/tree/main/sklearn-experiments) (2026-05-12)
 
