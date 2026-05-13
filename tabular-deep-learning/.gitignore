@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+catboost_info/
+**/catboost_info/
+**/_catboost_info/
+.uv-cache/
