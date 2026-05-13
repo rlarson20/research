@@ -113,7 +113,6 @@ for dirname, commit_date in subdirs_with_dates:
     print()  # Add blank line between entries
 
 ]]]-->
-<<<<<<< HEAD
 ## 3 research projects
 
 ### [tabular-deep-learning](https://github.com/rlarson20/research/tree/main/tabular-deep-learning) (2026-05-13)
@@ -148,12 +147,6 @@ Key findings:
 - AUC and threshold-dependent metrics (like F1) can diverge sharply; threshold tuning is essential for imbalanced tasks.
 - Several common scikit-learn defaults and recent deprecations affect real-world reliability—hyperparameter tuning and API awareness are necessary.
 - Model inspection tools, such as permutation importance and partial dependence plots, substantially enhance interpretability.
-||||||| parent of 1294c54 (add some local settings and fix readme)
-## 0 research projects
-=======
-
-## 0 research projects
->>>>>>> 1294c54 (add some local settings and fix readme)
 
 <!--[[[end]]]-->
 
