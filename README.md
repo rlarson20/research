@@ -9,7 +9,7 @@ import pathlib
 from datetime import datetime, timezone
 
 # Model to use for generating summaries
-MODEL = "github/gpt-4.1"
+MODEL = "github/gpt-5"
 
 # Get all subdirectories with their first commit dates
 research_dir = pathlib.Path.cwd()
@@ -113,6 +113,7 @@ for dirname, commit_date in subdirs_with_dates:
     print()  # Add blank line between entries
 
 ]]]-->
+<<<<<<< HEAD
 ## 3 research projects
 
 ### [tabular-deep-learning](https://github.com/rlarson20/research/tree/main/tabular-deep-learning) (2026-05-13)
@@ -147,6 +148,12 @@ Key findings:
 - AUC and threshold-dependent metrics (like F1) can diverge sharply; threshold tuning is essential for imbalanced tasks.
 - Several common scikit-learn defaults and recent deprecations affect real-world reliability—hyperparameter tuning and API awareness are necessary.
 - Model inspection tools, such as permutation importance and partial dependence plots, substantially enhance interpretability.
+||||||| parent of 1294c54 (add some local settings and fix readme)
+## 0 research projects
+=======
+
+## 0 research projects
+>>>>>>> 1294c54 (add some local settings and fix readme)
 
 <!--[[[end]]]-->
 
@@ -170,11 +177,12 @@ cog -r -P README.md
 ```
 
 The script automatically:
+
 - Discovers all subdirectories in this folder
 - Gets the first commit date for each folder and sorts by most recent first
 - For each folder, checks if a `_summary.md` file exists
 - If the summary exists, it uses the cached version
-- If not, it generates a new summary using `llm -m github/gpt-4.1` with a prompt that creates engaging descriptions with bullets and links
+- If not, it generates a new summary using `llm -m github/gpt-5` with a prompt that creates engaging descriptions with bullets and links
 - Creates markdown links to each project folder on GitHub
 - New summaries are saved to `_summary.md` to avoid regenerating them on every run
 
