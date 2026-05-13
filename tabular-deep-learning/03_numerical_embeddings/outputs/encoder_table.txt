@@ -1,0 +1,15 @@
+CLASSIFICATION (10k × 20)                                   
+encoder             accuracy    fit_s        params
+----------------------------------------------------
+Linear                0.9705      2.8        37,569
+LinearReLU            0.9645      2.7        37,569
+Periodic              0.9685      3.3        45,569
+PiecewiseLinear       0.9705      3.0        40,129
+
+REGRESSION (10k × 20)                                       
+encoder                 RMSE    fit_s        params
+----------------------------------------------------
+Linear               11.3814      2.5        37,569
+LinearReLU           14.8617      2.6        37,569
+Periodic             15.3926      3.3        45,569
+PiecewiseLinear      11.1314      2.8        40,129
