@@ -113,7 +113,18 @@ for dirname, commit_date in subdirs_with_dates:
     print()  # Add blank line between entries
 
 ]]]-->
-## 2 research projects
+## 3 research projects
+
+### [tabular-deep-learning](https://github.com/rlarson20/research/tree/main/tabular-deep-learning) (2026-05-13)
+
+Challenging the established view that boosting and linear models dominate on tabular data, this project systematically compares deep learning (DL), specifically FT-Transformer and various MLP-based architectures, against boosting methods across six synthetic experiments. Using controlled synthetic datasets with mixed numerical and categorical features at moderate scale, DL not only outperforms CatBoost and LightGBM but becomes increasingly competitive as data size grows and maintains robustness under data corruption. Experiments highlight how dataset composition is critical: unlike prior benchmarks on small or cat-dominant datasets, DL excels on mixed-type, larger-scale generators. All findings are reproducible within the project’s self-contained scripts, but results may not translate directly to real-world datasets due to the sandbox's restrictions. For code and tools, key DL implementations can be found in [rtdl-revisiting-models](https://github.com/yandex-research/rtdl) and [pytorch-tabnet](https://github.com/dreamquark-ai/tabnet).
+
+**Key findings:**
+- FT-Transformer (DL) beats boosting by notable margins on synthetic mixed-type data, especially as sample size increases.
+- Numerical feature embeddings and prior reputed DL techniques offer little on unimodal synthetic data, underlining dataset sensitivity.
+- DL robustness exceeds that of CatBoost and LightGBM under missingness and noise corruption.
+- CatBoost's dominance in categorical encoding drops when numericals also carry independent signal.
+- The main determinant of "winner" is dataset shape; synthetic benchmarks favor DL far more than real-world suites.
 
 ### [ml-library-experiments](https://github.com/rlarson20/research/tree/main/ml-library-experiments) (2026-05-12)
 
